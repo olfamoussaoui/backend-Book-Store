@@ -1,5 +1,6 @@
+import { Document } from 'mongoose';
 
-export interface Book {
+export interface Book extends Document {
     id?: string;
     bookName: string;
     author: string;
